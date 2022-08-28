@@ -1,0 +1,15 @@
+{
+  "name": "01",
+  "version": "1.0.0",
+  "description": "API para CRUD de produtos",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "keywords": [],
+  "author": "Wagner Souza de Paula",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
