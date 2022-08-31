@@ -28,7 +28,7 @@ exports.listar = (req, res) => {
         res.status(err.numero).json({erro: err.mensagem});
       }
       else {
-        res.json(produtos);
+        res.status(200).json(produtos);
       }
     })
 }
@@ -45,7 +45,7 @@ exports.buscarPorId = (req, res) => {
         res.status(err.numero).json({erro: err.mensagem});
       }
       else {
-        res.json(produto);
+        res.status(200).json(produto);
       }
     });
 }
@@ -63,7 +63,7 @@ exports.atualizar = (req, res) => {
           res.status(err.numero).json({erro: err.mensagem});
         }
         else {
-          res.json(produtoAlterado);
+          res.status(200).json(produtoAlterado);
         }
       });
 }
@@ -79,7 +79,7 @@ exports.deletar = (req, res) => {
           res.status(err.numero).json({erro: err.mensagem});
         }
         else {
-          res.json(produto);
+          res.status(200).json(produto);
         }
       });
   }
